@@ -5,7 +5,6 @@ import WbSunnyIcon from '@mui/icons-material/WbSunny';
 
 const Header = ({ onToggle, dark }) => (
   <div className={styles.Header}>
-    <React.Fragment></React.Fragment>
     <a href='#'>
       <h1>Chris</h1>
     </a>

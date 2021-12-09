@@ -5,7 +5,11 @@
   align-items: center;
   overflow-x: hidden;
   background-color: var(--container-color);
-  border-bottom: 0.1rem solid var(--first-color);
+
+  @supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+    background-color: transparent;
+    backdrop-filter: blur(0.5rem);
+  }
 
   h1 {
     color: var(--title-color);

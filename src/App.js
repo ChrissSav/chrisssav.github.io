@@ -48,7 +48,6 @@ function App() {
           }}
         />
       </div>
-
       <section id='section_info'>
         <Info />
       </section>
