@@ -1,0 +1,84 @@
+.Footer {
+  background-color: var(--first-color);
+  display: flex;
+  overflow-x: hidden;
+  justify-content: space-between;
+  flex-direction: column;
+  color: white;
+  overflow-x: hidden;
+  width: 100%;
+
+  .FooterContainer {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px 0px;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      margin-left: var(--maring-left);
+    }
+
+    @media screen and (min-width: 1024px) {
+      gap: 3rem;
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+
+  .CopyContainer {
+    margin-top: 20px;
+
+    p {
+      text-align: center;
+      color: black;
+    }
+  }
+
+  .ChrisContainer {
+    padding-top: 0.7rem;
+    h1 {
+      padding: 0;
+      margin: 0;
+    }
+
+    p {
+      padding: 0;
+      margin: 0;
+      color: black;
+    }
+  }
+
+  .ContactContainer {
+    display: flex;
+    flex-direction: column;
+
+    a {
+      display: flex;
+      transition: 0.3s;
+      align-items: center;
+    }
+
+    .icon {
+      margin-right: 10px;
+    }
+
+    // a:hover {
+    //   transform: translateX(1em);
+    // }
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  ul li {
+    padding-bottom: 5px;
+    transition: 0.3s;
+  }
+
+  ul li:hover {
+    transform: translateX(1em);
+  }
+}

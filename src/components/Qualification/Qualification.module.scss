@@ -1,0 +1,74 @@
+.Qualification {
+  display: flex;
+  flex: 0 0 50%;
+}
+
+.DataContainer {
+  margin: 0 3rem;
+  padding-top: 0.5rem;
+
+  h3 {
+    margin: 0;
+    color: var(--title-color);
+  }
+  p {
+    color: var(--title-color);
+  }
+
+  transition: 0.3s;
+
+  &:hover {
+    transform: scale(1.1);
+    cursor: default;
+  }
+  @media (max-width: 768px) {
+    h3 {
+      font-size: 0.8rem;
+    }
+    margin: 0 1rem;
+    p {
+      font-size: 0.7rem;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    h3 {
+      font-size: 0.8rem;
+    }
+    margin: 0 1rem;
+    p {
+      font-size: 0.7rem;
+    }
+  }
+}
+.CircleLineContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 15px;
+
+  .spanCircle {
+    background-color: var(--first-color);
+    border-radius: 100%;
+    padding: 0.6rem;
+    color: white;
+    font-size: 1.5rem;
+
+    @media (max-width: 768px) {
+      font-size: 1rem;
+      padding: 0.3rem;
+    }
+
+    @media (max-width: 1024px) {
+      font-size: 1rem;
+      padding: 0.3rem;
+    }
+  }
+
+  .spanLine {
+    background-color: var(--first-color);
+    height: 100%;
+    width: 2px;
+    display: inline-block;
+  }
+}
