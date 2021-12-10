@@ -17,10 +17,8 @@
 }
 
 .headerContainer {
-  margin: 0;
-  padding: 0;
-  position: sticky;
+  overflow: hidden;
+  position: fixed;
   top: 0;
-  z-index: 6;
-  background: blur(4px);
+  width: 100%;
 }

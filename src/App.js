@@ -54,7 +54,7 @@ function App() {
       <section id='section_about'>
         <About />
       </section>
-      <section id='section_qualifications'>
+      <section id='section_background'>
         <Qualifications />
       </section>
       <section id='section_footer'>

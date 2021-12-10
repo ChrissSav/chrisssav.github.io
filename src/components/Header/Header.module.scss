@@ -31,7 +31,15 @@
 
   li {
     display: inline;
-    padding: 0px 1rem;
+    margin: 0px 1rem;
+
+    div {
+      display: flex;
+    }
+
+    :hover {
+      color: var(--first-color);
+    }
   }
 
   a {

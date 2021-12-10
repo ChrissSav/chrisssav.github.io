@@ -27,10 +27,14 @@
 
   .CopyContainer {
     margin-top: 20px;
-
+    flex-direction: row;
     p {
       text-align: center;
       color: black;
+      font-size: 0.9rem;
+      a {
+        font-size: 1rem;
+      }
     }
   }
 
@@ -74,7 +78,7 @@
   }
 
   ul li {
-    padding-bottom: 5px;
+    padding-bottom: 0.7rem;
     transition: 0.3s;
   }
 

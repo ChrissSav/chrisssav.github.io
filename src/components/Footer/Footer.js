@@ -13,18 +13,18 @@ const Footer = () => (
         <h1>Chris</h1> <p> Software Engineer</p>
       </div>
       <div>
-        <h3>Sections</h3>
+        <h2>Sections</h2>
         <ul>
           <li>
             <a href='#section_about'>About</a>
           </li>
           <li>
-            <a href='#section_qualifications'>Background</a>{' '}
+            <a href='#section_background'>Background</a>{' '}
           </li>
         </ul>
       </div>
       <div>
-        <h3>Contact</h3>
+        <h2>Contact</h2>
         <div className={styles.ContactContainer}>
           <ul>
             <li>

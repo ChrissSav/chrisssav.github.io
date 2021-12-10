@@ -23,7 +23,6 @@
 
 .AboutContainer {
   flex-grow: 1;
-
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -91,6 +90,22 @@
     padding: 0 4rem;
     p {
       text-align: start;
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1400px) {
+  .About {
+  }
+  .AboutContainer {
+    img {
+      width: 40vw;
+    }
+  }
+
+  .TextContainer {
+    p {
+      width: 25rem;
     }
   }
 }

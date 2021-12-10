@@ -32,17 +32,17 @@ const Info = () => {
           Software Engineer <br />
           From Thessaloniki, Greece
         </p>
-        <div>
+        <div className={styles.iconsContainer}>
           <a href='https://github.com/ChrissSav' rel='noreferrer' target='_blank'>
             <GitHubIcon className={styles.icon} />
           </a>
           <a href='https://www.linkedin.com/in/ChrissSav' rel='noreferrer' target='_blank'>
             <LinkedInIcon className={styles.icon} />
           </a>
-          <a href='mailto:chris.savlidis@gmail.com' rel='noreferrer' target='_blank'>
+          <a href='mailto:chris.savlidis@gmail.com'>
             <AlternateEmailIcon className={styles.icon} />
           </a>
-          <a href='tel:00306995462228' rel='noreferrer' target='_blank'>
+          <a href='tel:00306995462228'>
             <CallIcon className={styles.icon} />
           </a>
         </div>
