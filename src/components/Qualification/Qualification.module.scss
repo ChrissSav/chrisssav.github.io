@@ -6,6 +6,7 @@
 .DataContainer {
   margin: 0 3rem;
   padding-top: 0.5rem;
+  transition: 0.3s;
 
   h3 {
     margin: 0;
@@ -15,12 +16,13 @@
     color: var(--title-color);
   }
 
-  transition: 0.3s;
-
-  &:hover {
-    transform: scale(1.1);
-    cursor: default;
+  @media (hover: hover) {
+    &:hover {
+      transform: scale(1.1);
+      cursor: default;
+    }
   }
+
   @media (max-width: 768px) {
     h3 {
       font-size: 0.8rem;

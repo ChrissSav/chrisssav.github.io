@@ -23,11 +23,6 @@
   flex-wrap: wrap;
   transition: 0.3s;
   width: 35rem;
-
-  // &:hover {
-  //   transform: scale(1.1);
-  //   cursor: default;
-  // }
 }
 
 .Container {
@@ -40,8 +35,11 @@
     width: 35vw;
     transition: 0.3s;
   }
-  img:hover {
-    transform: scale(1.1);
+
+  @media (hover: hover) {
+    img:hover {
+      transform: scale(1.1);
+    }
   }
 }
 
@@ -61,11 +59,13 @@
     margin-top: 4rem;
   }
 }
+
 @media (min-width: 800px) and (max-width: 1000px) {
   .Container {
     margin-bottom: 5rem;
   }
 }
+
 @media screen and (min-width: 1024px) {
   .Qualifications {
     height: 100vh;

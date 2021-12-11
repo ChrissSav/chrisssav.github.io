@@ -13,6 +13,10 @@
     justify-content: space-evenly;
     padding: 10px 0px;
 
+    h2 {
+      font-weight: 500;
+    }
+
     @media (max-width: 768px) {
       flex-direction: column;
       margin-left: var(--maring-left);
@@ -28,10 +32,12 @@
   .CopyContainer {
     margin-top: 20px;
     flex-direction: row;
+
     p {
       text-align: center;
       color: black;
       font-size: 0.9rem;
+
       a {
         font-size: 1rem;
       }
@@ -65,10 +71,6 @@
     .icon {
       margin-right: 10px;
     }
-
-    // a:hover {
-    //   transform: translateX(1em);
-    // }
   }
 
   ul {
@@ -82,7 +84,9 @@
     transition: 0.3s;
   }
 
-  ul li:hover {
-    transform: translateX(1em);
+  @media (hover: hover) {
+    ul li:hover {
+      transform: translateX(1em);
+    }
   }
 }

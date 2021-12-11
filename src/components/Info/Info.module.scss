@@ -19,9 +19,11 @@
     transition: 0.3s;
     display: flex;
 
-    span:hover {
-      transform: translateY(-0.2em);
-      cursor: pointer;
+    @media (hover: hover) {
+      span:hover {
+        transform: translateY(-0.2em);
+        cursor: pointer;
+      }
     }
 
     .textBlue {
@@ -54,9 +56,11 @@
     transition: 0.3s;
   }
 
-  .icon:hover {
-    transform: scale(1.2);
-    transform: rotate(1turn);
+  @media (hover: hover) {
+    .icon:hover {
+      transform: scale(1.2);
+      transform: rotate(1turn);
+    }
   }
 }
 
@@ -111,9 +115,6 @@
       font-size: 2rem;
     }
   }
-
-  .icon {
-  }
 }
 
 @media (max-width: 425px) {
@@ -137,6 +138,26 @@
 
     .icon {
       font-size: 1.5rem;
+    }
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1400px) {
+  .Info {
+    img {
+      width: 450px;
+    }
+  }
+
+  .textContainerAnim {
+    h1 {
+      font-size: 3.5rem;
+    }
+  }
+
+  .textContainer {
+    p {
+      font-size: 2rem;
     }
   }
 }

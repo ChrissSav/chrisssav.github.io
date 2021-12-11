@@ -1,7 +1,7 @@
 {
   "homepage": "https://chrisssav.github.io/",
   "name": "personal-web-site",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "private": true,
   "dependencies": {
     "@mui/icons-material": "^5.2.0",
