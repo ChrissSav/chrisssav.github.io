@@ -38,12 +38,12 @@ const Footer = () => (
               </a>
             </li>
             <li>
-              <a href='mailto:chris.savlidis@gmail.com' rel='noreferrer' target='_blank'>
+              <a href='mailto:chris.savlidis@gmail.com'>
                 <AlternateEmailIcon className={styles.icon} /> chris.savlidis@gmail.com
               </a>
             </li>
             <li>
-              <a href='tel:00306995462228' rel='noreferrer' target='_blank'>
+              <a href='tel:00306995462228'>
                 <CallIcon className={styles.icon} /> (+30) 699 546 2228
               </a>
             </li>

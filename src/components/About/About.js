@@ -19,9 +19,14 @@ const About = () => (
           occupied with developing Web, Android applications, REST APIs and keeping up with the latest Agile
           methodologies like Scrum.
         </p>
-        <button>
+
+        <a
+          href='https://drive.google.com/drive/folders/1iS3lECfUiuzumpvfGsrNoOwKBztghopU?usp=sharing'
+          rel='noreferrer'
+          target='_blank'
+        >
           <span>Download CV</span> <DownloadIcon />
-        </button>
+        </a>
       </div>
     </div>
   </div>

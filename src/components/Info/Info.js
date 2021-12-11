@@ -46,7 +46,7 @@ const Info = () => {
             <CallIcon className={styles.icon} />
           </a>
         </div>
-      </div>{' '}
+      </div>
       <div className={styles.ImageContainer}>
         <img src='./assets/asset_laptop.svg' />
       </div>
