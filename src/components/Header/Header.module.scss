@@ -6,11 +6,6 @@
   overflow-x: hidden;
   background-color: var(--container-color);
 
-  @supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
-    background-color: transparent;
-    backdrop-filter: blur(0.3rem);
-  }
-
   h1 {
     color: var(--title-color);
     transition: 0.3s;

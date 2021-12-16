@@ -38,9 +38,15 @@
     font-size: 1rem;
     text-align: justify;
     max-width: 45rem;
+
+    a {
+      color: var(--text-color);
+      font-size: 1rem;
+      font-weight: 800;
+    }
   }
 
-  a {
+  .Button {
     margin-top: 4rem;
     background-color: var(--first-color);
     color: white;

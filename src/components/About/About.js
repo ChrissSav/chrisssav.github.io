@@ -14,13 +14,25 @@ const About = () => (
         <p>
           I am a graduate of Applied Informatics at the University of Macedonia in Thessaloniki, Greece. My aspiration
           has always been to put my ideas into practice. After my first encounter with computer programming, I realised
-          that it was going to be my biggest passion. "Fellow." was the frst complete project that two of my fellow
-          students and I developed successfully. The app is available in Google Play. In my free time, I am usually
-          occupied with developing Web, Android applications, REST APIs and keeping up with the latest Agile
-          methodologies like Scrum.
+          that it was going to be my biggest passion.
+          <a href='https://fellowtraveller.gr' rel='noreferrer' target='_blank'>
+            <strong> "Fellow." </strong>
+          </a>
+          was the frst complete project that two of my fellow students and I developed successfully. The app is
+          available in
+          <a
+            href='https://play.google.com/store/apps/details?id=gr.fellow.fellow_traveller'
+            rel='noreferrer'
+            target='_blank'
+          >
+            <strong> Google Play</strong>
+          </a>
+          . In my free time, I am usually occupied with developing Web, Android applications, REST APIs and keeping up
+          with the latest Agile methodologies like Scrum.
         </p>
 
         <a
+          className={styles.Button}
           href='https://drive.google.com/drive/folders/1iS3lECfUiuzumpvfGsrNoOwKBztghopU?usp=sharing'
           rel='noreferrer'
           target='_blank'
