@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import styles from './Info.module.scss';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
@@ -9,6 +9,8 @@ const Info = () => {
   const elements = [..."Hi,\xa0I'm\xa0"];
   const chris = [...'Chris'];
   const items = [];
+
+  const [paragraphContent, setParagraphContent] = useState([]);
 
   elements.forEach((n, key) => {
     items.push(<span key={key}>{n}</span>);
@@ -22,16 +24,26 @@ const Info = () => {
     );
   });
 
+  const delay = async (ms) => new Promise((res) => setTimeout(res, ms));
+
+  async function fillParagraph() {
+    for (let character of [...'Software Engineer From \n Thessaloniki, Greece']) {
+      setParagraphContent((oldArray) => [...oldArray, character]);
+      await delay(125);
+    }
+  }
+
+  useEffect(() => {
+    fillParagraph();
+  }, []);
+
   return (
     <div className={styles.Info}>
       <div className={styles.textContainer}>
         <div className={styles.textContainerAnim}>
           <h1>{items}</h1>
         </div>
-        <p>
-          Software Engineer <br />
-          From Thessaloniki, Greece
-        </p>
+        <p>{paragraphContent}</p>
         <div className={styles.iconsContainer}>
           <a href='https://github.com/ChrissSav' rel='noreferrer' target='_blank'>
             <GitHubIcon className={styles.icon} />
