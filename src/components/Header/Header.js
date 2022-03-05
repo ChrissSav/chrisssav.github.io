@@ -13,7 +13,7 @@ const Header = ({ onToggle, dark }) => (
         <a href='#section_about'>About</a>
       </li>
       <li>
-        <a href='#section_background'>Background</a>
+        <a href='#section_qualifications'>Qualifications</a>
       </li>
       <li>
         <div onClick={onToggle}>{dark ? <NightlightIcon /> : <WbSunnyIcon />}</div>

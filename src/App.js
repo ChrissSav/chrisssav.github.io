@@ -6,7 +6,6 @@ import Info from './components/Info/Info';
 import About from './components/About/About';
 import Qualifications from './components/Qualifications/Qualifications';
 import ArrowCircleUpIcon from '@mui/icons-material/ArrowCircleUp';
-import CallIcon from '@mui/icons-material/Call';
 
 function App() {
   const [darkTheme, setDarkTheme] = useState(false);
@@ -30,8 +29,6 @@ function App() {
     window.scrollTo({
       top: 0,
       behavior: 'smooth',
-      /* you can also use 'auto' behaviour
-         in place of 'smooth' */
     });
   };
 
@@ -54,7 +51,7 @@ function App() {
       <section id='section_about'>
         <About />
       </section>
-      <section id='section_background'>
+      <section id='section_qualifications'>
         <Qualifications />
       </section>
       <section id='section_footer'>

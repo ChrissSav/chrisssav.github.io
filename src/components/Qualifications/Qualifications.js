@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import styles from './Qualifications.module.scss';
 import { Qualification } from '../Qualification/Qualification';
 
@@ -7,14 +6,20 @@ const Qualifications = () => {
   const list = [
     {
       education: false,
+      title: 'Mobile Software Engineer',
+      description: 'Desquared',
+      date: 'Mar 2022 - Present',
+    },
+    {
+      education: false,
       title: 'Software Engineer',
       description: 'Intersalonica',
-      date: 'Nov 2021 - Present',
+      date: 'Nov 2021 - Feb 2022',
     },
     {
       education: false,
       title: 'Android Engineer',
-      description: 'Arx.net',
+      description: 'arx.net',
       date: 'Jun 2020 - Sept 2020',
     },
     {
@@ -29,7 +34,7 @@ const Qualifications = () => {
 
   list.map((n, key) => {
     key++;
-    if (key % 2 !== 0) {
+    if (key % 2 === 0) {
       rows.push(<Qualification data={n} key={key} left={true} showLine={key !== list.length} />);
       rows.push(<Qualification data={{}} key={key + list.length} />);
     } else {
@@ -41,7 +46,7 @@ const Qualifications = () => {
   return (
     <div className={styles.Qualifications}>
       <div className={styles.QualificationsIntroducation}>
-        <h1>Background</h1>
+        <h1>Qualifications</h1>
       </div>
 
       <div className={styles.Container}>
@@ -51,9 +56,5 @@ const Qualifications = () => {
     </div>
   );
 };
-
-Qualifications.propTypes = {};
-
-Qualifications.defaultProps = {};
 
 export default Qualifications;

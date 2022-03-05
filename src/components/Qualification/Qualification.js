@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import styles from './Qualification.module.scss';
 import WorkOutlineIcon from '@mui/icons-material/WorkOutline';
 import SchoolIcon from '@mui/icons-material/School';
@@ -14,7 +13,7 @@ export const Qualification = ({ data, left = false, showLine = true }) => {
       </div>
       {left && (
         <div className={styles.CircleLineContainer}>
-          {data.education ? (
+          {data.education === true ? (
             <SchoolIcon className={styles.spanCircle} />
           ) : (
             <WorkOutlineIcon className={styles.spanCircle} />
@@ -25,7 +24,3 @@ export const Qualification = ({ data, left = false, showLine = true }) => {
     </div>
   );
 };
-
-Qualification.propTypes = {};
-
-Qualification.defaultProps = {};

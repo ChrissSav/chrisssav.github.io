@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import styles from './About.module.scss';
 import DownloadIcon from '@mui/icons-material/Download';
 
@@ -43,9 +42,5 @@ const About = () => (
     </div>
   </div>
 );
-
-About.propTypes = {};
-
-About.defaultProps = {};
 
 export default About;

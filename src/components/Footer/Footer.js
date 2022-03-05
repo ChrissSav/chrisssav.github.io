@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import styles from './Footer.module.scss';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
@@ -19,7 +18,7 @@ const Footer = () => (
             <a href='#section_about'>About</a>
           </li>
           <li>
-            <a href='#section_background'>Background</a>{' '}
+            <a href='#section_qualifications'>Qualifications</a>{' '}
           </li>
         </ul>
       </div>
@@ -53,23 +52,14 @@ const Footer = () => (
     </div>
     <div className={styles.CopyContainer}>
       <p>
-        © 2021{' '}
+        © 2022 Developed and Designed by
         <a href='https://github.com/ChrissSav' target='_blank'>
           {' '}
-          ChrissSav,{' '}
-        </a>
-        illustrations from{' '}
-        <a href='https://www.freepik.com' target='_blank'>
-          {' '}
-          freepik.
+          ChrissSav
         </a>
       </p>
     </div>
   </div>
 );
-
-Footer.propTypes = {};
-
-Footer.defaultProps = {};
 
 export default Footer;
