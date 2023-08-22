@@ -4,7 +4,7 @@ import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 import Info from './components/Info/Info';
 import About from './components/About/About';
-import Qualifications from './components/Qualifications/Qualifications';
+import Background from './components/Background/Background';
 import ArrowCircleUpIcon from '@mui/icons-material/ArrowCircleUp';
 
 function App() {
@@ -51,8 +51,8 @@ function App() {
       <section id='section_about'>
         <About />
       </section>
-      <section id='section_qualifications'>
-        <Qualifications />
+      <section id='section_background'>
+        <Background />
       </section>
       <section id='section_footer'>
         <Footer />

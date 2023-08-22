@@ -1,4 +1,4 @@
-.Qualifications {
+.Background {
   overflow-x: hidden;
   width: 100%;
   padding-top: 5rem;
@@ -8,7 +8,7 @@
   flex-direction: column;
 }
 
-.QualificationsIntroducation {
+.BackgroundIntroducation {
   text-align: center;
   h1 {
     color: var(--title-color);
@@ -18,7 +18,7 @@
   }
 }
 
-.QualificationsContainer {
+.BackgroundContainer {
   display: flex;
   flex-wrap: wrap;
   transition: 0.3s;
@@ -55,7 +55,7 @@
     }
   }
 
-  .QualificationsContainer {
+  .BackgroundContainer {
     margin-top: 4rem;
   }
 }
@@ -67,7 +67,7 @@
 }
 
 @media screen and (min-width: 1024px) {
-  .Qualifications {
+  .Background {
     height: 100vh;
   }
   .Container {

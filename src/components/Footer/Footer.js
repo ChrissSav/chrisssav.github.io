@@ -52,7 +52,7 @@ const Footer = () => (
     </div>
     <div className={styles.CopyContainer}>
       <p>
-        © 2022 Developed and Designed by
+        © 2023 Developed and Designed by
         <a href='https://github.com/ChrissSav' target='_blank'>
           {' '}
           ChrissSav

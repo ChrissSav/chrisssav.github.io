@@ -1,12 +1,12 @@
 import React from 'react';
-import styles from './Qualifications.module.scss';
-import { Qualification } from '../Qualification/Qualification';
+import styles from './Background.module.scss';
+import { BackgroundItem } from '../BackgroundItem/BackgroundItem';
 
-const Qualifications = () => {
+const BackgroundItems = () => {
   const list = [
     {
       education: false,
-      title: 'Mobile Software Engineer',
+      title: 'Android Mobile Software Engineer',
       description: 'Desquared',
       date: 'Mar 2022 - Present',
     },
@@ -35,26 +35,26 @@ const Qualifications = () => {
   list.map((n, key) => {
     key++;
     if (key % 2 === 0) {
-      rows.push(<Qualification data={n} key={key} left={true} showLine={key !== list.length} />);
-      rows.push(<Qualification data={{}} key={key + list.length} />);
+      rows.push(<BackgroundItem data={n} key={key} left={true} showLine={key !== list.length} />);
+      rows.push(<BackgroundItem data={{}} key={key + list.length} />);
     } else {
-      rows.push(<Qualification data={{}} key={key + list.length} left={true} showLine={key !== list.length} />);
-      rows.push(<Qualification data={n} key={key} />);
+      rows.push(<BackgroundItem data={{}} key={key + list.length} left={true} showLine={key !== list.length} />);
+      rows.push(<BackgroundItem data={n} key={key} />);
     }
   });
 
   return (
-    <div className={styles.Qualifications}>
-      <div className={styles.QualificationsIntroducation}>
-        <h1>Qualifications</h1>
+    <div className={styles.Background}>
+      <div className={styles.BackgroundIntroducation}>
+        <h1>Background</h1>
       </div>
 
       <div className={styles.Container}>
         <img src='./assets/evolution.svg' alt='evolution' />
-        <div className={styles.QualificationsContainer}>{rows}</div>
+        <div className={styles.BackgroundContainer}>{rows}</div>
       </div>
     </div>
   );
 };
 
-export default Qualifications;
+export default BackgroundItems;

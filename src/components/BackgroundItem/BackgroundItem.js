@@ -1,11 +1,11 @@
 import React from 'react';
-import styles from './Qualification.module.scss';
+import styles from './BackgroundItem.module.scss';
 import WorkOutlineIcon from '@mui/icons-material/WorkOutline';
 import SchoolIcon from '@mui/icons-material/School';
 
-export const Qualification = ({ data, left = false, showLine = true }) => {
+export const BackgroundItem = ({ data, left = false, showLine = true }) => {
   return (
-    <div className={styles.Qualification} style={left ? { justifyContent: 'end' } : { justifyContent: 'start' }}>
+    <div className={styles.BackgroundItem} style={left ? { justifyContent: 'end' } : { justifyContent: 'start' }}>
       <div className={styles.DataContainer}>
         <h3>{data.title}</h3>
         <p>{data.description}</p>
