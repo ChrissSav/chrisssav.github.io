@@ -6,11 +6,11 @@ import WbSunnyIcon from '@mui/icons-material/WbSunny';
 const Header = ({ onToggle, dark }) => (
   <div className={styles.Header}>
     <a href='#'>
-      <h1>Chris</h1>
+      <h1>Chris Savlidis</h1>
     </a>
     <ul>
       <li>
-        <a href='#section_about'>About</a>
+        <a href='#section_about'>About Me</a>
       </li>
       <li>
         <a href='#section_background'>Background</a>

@@ -8,7 +8,11 @@ export const BackgroundItem = ({ data, left = false, showLine = true }) => {
     <div className={styles.BackgroundItem} style={left ? { justifyContent: 'end' } : { justifyContent: 'start' }}>
       <div className={styles.DataContainer}>
         <h3>{data.title}</h3>
-        <p>{data.description}</p>
+        <p>
+          <a href={data.url} target='_blank'>
+            {data.description}
+          </a>
+        </p>
         <p>{data.date}</p>
       </div>
       {left && (

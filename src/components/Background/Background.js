@@ -9,24 +9,28 @@ const BackgroundItems = () => {
       title: 'Android Mobile Software Engineer',
       description: 'Desquared',
       date: 'Mar 2022 - Present',
+      url: 'https://www.thinkdesquared.com/',
     },
     {
       education: false,
       title: 'Software Engineer',
       description: 'Intersalonica',
       date: 'Nov 2021 - Feb 2022',
+      url: 'https://intersalonica.gr/',
     },
     {
       education: false,
       title: 'Android Engineer',
       description: 'arx.net',
       date: 'Jun 2020 - Sept 2020',
+      url: 'https://web.arx.net/',
     },
     {
       education: true,
       title: 'Applied Informatics',
       description: 'University of Macedonia',
       date: '2016 - 2020',
+      url: 'https://www.uom.gr',
     },
   ];
 

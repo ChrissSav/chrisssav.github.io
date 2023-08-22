@@ -9,16 +9,16 @@ const Footer = () => (
   <div className={styles.Footer}>
     <div className={styles.FooterContainer}>
       <div className={styles.ChrisContainer}>
-        <h1>Chris</h1> <p> Software Engineer</p>
+        <h1>Chris Savlidis</h1> <p> Software Engineer</p>
       </div>
       <div>
         <h2>Sections</h2>
         <ul>
           <li>
-            <a href='#section_about'>About</a>
+            <a href='#section_about'>About Me</a>
           </li>
           <li>
-            <a href='#section_qualifications'>Qualifications</a>{' '}
+            <a href='#section_background'>Background</a>{' '}
           </li>
         </ul>
       </div>
